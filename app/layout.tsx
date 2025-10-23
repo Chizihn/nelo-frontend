@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Orbitron, Bebas_Neue } from "next/font/google";
 import "./globals.css";
+import { Suspense } from "react";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -68,15 +69,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="canonical" href="https://yourdomain.com" />
-      </head>
-      <body
-        className={`${spaceGrotesk.variable} ${orbitron.variable} ${bebasNeue.variable} font-space-grotesk antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <Suspense>
+      <html lang="en">
+        <head>
+          <link rel="canonical" href="https://yourdomain.com" />
+        </head>
+        <body
+          className={`${spaceGrotesk.variable} ${orbitron.variable} ${bebasNeue.variable} font-space-grotesk antialiased`}
+        >
+          {children}
+        </body>
+      </html>
+    </Suspense>
   );
 }
