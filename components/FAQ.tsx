@@ -61,7 +61,7 @@ export default function FAQ() {
             <br />
             Asked <span className="text-[#ff8a3d]">questions</span>
           </h2>
-          <p className="text-2xl font-space-grotesk">
+          <p className="text-lg lg:text-2xl font-space-grotesk">
             These are the most commonly asked questions about NELO. Can&apos;t
             find what you&apos;re looking for?
           </p>
