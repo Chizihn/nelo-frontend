@@ -1,0 +1,38 @@
+{
+  "name": "Nelo - AI-Powered Crypto Payments",
+  "short_name": "Nelo",
+  "description": "Send and receive crypto instantly through WhatsApp. Generate virtual cards and enjoy seamless crypto-to-fiat conversion.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFA94D",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://nelo.app/manifest.json"
+    }
+  ],
+  "categories": ["finance", "cryptocurrency", "payments"],
+  "screenshots": [
+    {
+      "src": "/screenshot-1.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg"
+    }
+  ]
+}

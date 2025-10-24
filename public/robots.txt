@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /payment/callback
+Disallow: /api/
+
+Sitemap: https://nelo.app/sitemap.xml

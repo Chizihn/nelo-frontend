@@ -13,7 +13,7 @@ export default function PaymentCallback() {
   const [isSuccess, setIsSuccess] = useState<boolean | null>(null);
 
   // 🔒 Replace with your actual WhatsApp bot number (no "+")
-  const WHATSAPP_NUMBER = "15551556995";
+  const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER as string;
 
   useEffect(() => {
     if (!tx_ref) return;

@@ -1,5 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
+import {
+  Wallet,
+  ArrowDownToLine,
+  CreditCard,
+  MessageSquare,
+} from "lucide-react";
 import FeatureCard from "./FeatureCard";
 
 export default function HowItWorks() {
@@ -7,30 +13,40 @@ export default function HowItWorks() {
     {
       title: "Easy on-ramp",
       description:
-        "Instantly cover your local currency to crypto directly from whatsapp, no complicated forms, no delays.",
+        "Send and receive crypto directly from your local payment methods fast, secure and stress-free.",
+      icon: Wallet,
     },
     {
-      title: "Global Access",
+      title: "Seamless Off-ramp",
       description:
-        "Instantly cover your local currency to crypto directly from whatsapp, no complicated forms, no delays.",
+        "Convert your crypto back to cash anytime. Instant withdrawals,. Zero confusion. Full control.",
+      icon: ArrowDownToLine,
     },
     {
-      title: "Virtual Card",
+      title: "Virtual Cards for everyday use",
       description:
-        "Instantly cover your local currency to crypto directly from whatsapp, no complicated forms, no delays.",
+        "Spend your crypto anywhere, anytime with a NELO virtual card.",
+      icon: CreditCard,
     },
     {
-      title: "Virtual Card",
+      title: "Chat-Based payments",
       description:
-        "Instantly cover your local currency to crypto directly from whatsapp, no complicated forms, no delays.",
+        "Send and receive money right from whatsapp. As easy as sending a message, no complexity.",
+      icon: MessageSquare,
       highlighted: true,
     },
   ];
 
   return (
-    <section id="how-it-works" className="bg-[#FAFAFA] py-24 px-6">
-      <div className="max-w-6xl mx-auto">
-        {/* Heading */}
+    <motion.section
+      id="how-it-works"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+      className="bg-[#FAFAFA] py-24 px-6"
+    >
+      <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -39,26 +55,19 @@ export default function HowItWorks() {
           className="text-center mb-16"
         >
           <h2 className="text-2xl md:text-4xl font-extrabold text-black mb-2">
-            How it works
+            Why people choose Nelo
           </h2>
           <p className="text-gray-600 text-lg">
-            This is how the website is going to work
+            Designed for speed, trust, and everyday use.
           </p>
         </motion.div>
 
-        {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
-          {features.map((feature, index) => (
-            <FeatureCard
-              key={index}
-              title={feature.title}
-              description={feature.description}
-              highlighted={feature.highlighted}
-              index={index}
-            />
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-8">
+          {features.map((f, i) => (
+            <FeatureCard key={i} {...f} index={i} />
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

@@ -1,37 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NELO Frontend
 
-## Getting Started
+A modern Next.js application for seamless crypto payments and virtual card services through WhatsApp integration.
 
-First, run the development server:
+![Nelo](public/nelo-logo.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🌟 Features
+
+- **WhatsApp Integration** - Send and receive crypto directly through WhatsApp messages
+- **Virtual Cards** - Generate and manage virtual cards for online payments
+- **Crypto On/Off Ramp** - Easy conversion between local currency and cryptocurrencies
+- **Responsive Design** - Fully responsive UI with a modern, clean aesthetic
+- **Animated UI** - Smooth animations and transitions using Framer Motion
+
+## 🛠 Tech Stack
+
+- **Framework**: Next.js 15.5
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animation**: Framer Motion
+- **Icons**: Lucide React
+- **Fonts**: Space Grotesk, Orbitron, Bebas Neue
+
+## 🚀 Getting Started
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Chizihn/nelo-frontend.git
+   cd nelo-frontend
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Run the development server:**
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Open [http://localhost:3000](http://localhost:3000) with your browser.**
+
+## 📁 Project Structure
+
+```
+nelo-frontend/
+├── app/                  # Next.js app directory
+│   ├── payment/         # Payment callback handling
+│   ├── privacy-policy/  # Privacy policy page
+│   └── terms-of-service/# Terms of service page
+├── components/          # React components
+│   ├── Button.tsx      # Reusable button component
+│   ├── CryptoSection/  # Crypto features section
+│   ├── FAQ/            # FAQ section
+│   ├── Header/         # Site header
+│   └── Hero/           # Hero section
+└── public/             # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a `.env.local` file in the root directory:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```env
+NEXT_PUBLIC_API_BASE_URL=your_api_url
+NEXT_PUBLIC_WHATSAPP_NUMBER=your_whatsapp_number
+```
 
-## Learn More
+## 📱 Features Breakdown
 
-To learn more about Next.js, take a look at the following resources:
+1. **Chat-Based Payments**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   - Direct crypto transactions through WhatsApp
+   - AI-powered chat interface
+   - Real-time transaction updates
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Virtual Cards**
 
-## Deploy on Vercel
+   - Generate virtual cards for online payments
+   - Multiple currency support
+   - Instant card creation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Crypto Services**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# nelo-frontend
+   - Easy on/off ramp for crypto
+   - Support for major cryptocurrencies
+   - Instant conversions
+
+4. **Security**
+   - Bank-level encryption
+   - Secure transaction processing
+   - Protected personal information
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is proprietary and confidential. All rights reserved.
+
+## 📞 Support
+
+For support, please contact us at support@nelo.com or start a WhatsApp chat with our AI agent.
